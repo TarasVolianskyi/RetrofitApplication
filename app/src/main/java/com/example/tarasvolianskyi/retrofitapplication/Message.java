@@ -1,14 +1,20 @@
 package com.example.tarasvolianskyi.retrofitapplication;
 
+import com.google.gson.annotations.SerializedName;
+
 /**
  * Created by tarasvolianskyi on 15.03.18.
  */
 
 public class Message {
 
+    @SerializedName("id")
     private long id;
+    @SerializedName("time")
     private long time;
+    @SerializedName("text")
     private String text;
+    @SerializedName("image")
     private String image;
 
     public long getId() {
